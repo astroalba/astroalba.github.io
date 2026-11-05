@@ -190,9 +190,10 @@ p:last-of-type { padding-bottom: 0; }
   gap: 5.5%;
   padding: 0 0 8px;
 }
-.entry .spacer, .entry .date { width: 20.875%; flex-shrink: 0; }
-.entry .content { width: 47.25%; padding-top: 8px; margin-bottom: 18px; }
-.entry.wide .content { width: 73.625%; }
+.entry .spacer { display: none; }
+.entry .date { width: 20.875%; flex-shrink: 0; }
+.entry .content { width: 73.625%; padding-top: 8px; margin-bottom: 18px; }
+.entry p:has(+ ul) { padding-bottom: 0; }
 .entry .date { margin-bottom: 18px; font-weight: bold; }
 .entry ul { margin: 0; padding: 0 0 23px 1em; line-height: 26px; }
 .entry ul:last-child { padding-bottom: 0; }
